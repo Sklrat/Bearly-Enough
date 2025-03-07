@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://cb11x8li6a2aj"]
+
+[ext_resource type="PackedScene" uid="uid://dvvswfeytqf4n" path="res://Scenes/bear.tscn" id="1_6bmdv"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+zoom = Vector2(4, 4)
+
+[node name="Bear" parent="." instance=ExtResource("1_6bmdv")]
+position = Vector2(123, 81)
+
+[node name="Bear2" parent="." instance=ExtResource("1_6bmdv")]
+position = Vector2(180, 97)
+
+[node name="Bear3" parent="." instance=ExtResource("1_6bmdv")]
+position = Vector2(46, 112)
+
+[node name="Bear4" parent="." instance=ExtResource("1_6bmdv")]
+position = Vector2(237, 26)
+
+[node name="Bear5" parent="." instance=ExtResource("1_6bmdv")]
+position = Vector2(63, 41)
+
+[node name="Bear6" parent="." instance=ExtResource("1_6bmdv")]
+position = Vector2(231, 134)
