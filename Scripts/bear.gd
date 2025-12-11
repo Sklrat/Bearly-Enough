@@ -47,5 +47,6 @@ func _generateBear() -> void:
 	secondary.modulate = secondaryColors.pick_random()
 	eyes.modulate = _generateRandomColor()
 	nose.modulate = noseColors.pick_random()
-	shadow.modulate = base.modulate
+	#shadow.modulate = (base.modulate * 1.5) * (eyes.modulate * 0.7)
+	#shadow.material.set("shader_paramater/multiply_color",Vector4(1,1,1,1));
 	

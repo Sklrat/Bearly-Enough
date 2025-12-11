@@ -12,7 +12,7 @@ zoom = Vector2(4, 4)
 position = Vector2(123, 81)
 
 [node name="Bear2" parent="." instance=ExtResource("1_6bmdv")]
-position = Vector2(180, 97)
+position = Vector2(222, 135)
 
 [node name="Bear3" parent="." instance=ExtResource("1_6bmdv")]
 position = Vector2(46, 112)
@@ -24,4 +24,4 @@ position = Vector2(237, 26)
 position = Vector2(63, 41)
 
 [node name="Bear6" parent="." instance=ExtResource("1_6bmdv")]
-position = Vector2(231, 134)
+position = Vector2(227, 136)

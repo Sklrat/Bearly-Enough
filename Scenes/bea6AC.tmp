@@ -11,7 +11,7 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_i8wqa"]
 shader = ExtResource("6_sshah")
-shader_parameter/multiply_color = Color(0.607435, 0.533158, 0.91285, 0)
+shader_parameter/multiply_color = Color(0.748232, 0.473321, 0.844636, 0)
 
 [node name="Bear" type="Node2D"]
 script = ExtResource("1_fgheh")
@@ -33,6 +33,6 @@ texture = ExtResource("5_np075")
 texture = ExtResource("6_0a20j")
 
 [node name="Shadow" type="Sprite2D" parent="."]
-self_modulate = Color(0, 0, 0, 0.439216)
+self_modulate = Color(0, 0, 0, 0.215686)
 material = SubResource("ShaderMaterial_i8wqa")
 texture = ExtResource("8_pdqcq")
