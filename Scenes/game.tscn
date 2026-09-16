@@ -24,4 +24,4 @@ position = Vector2(237, 26)
 position = Vector2(63, 41)
 
 [node name="Bear6" parent="." instance=ExtResource("1_6bmdv")]
-position = Vector2(227, 136)
+position = Vector2(244, 101)

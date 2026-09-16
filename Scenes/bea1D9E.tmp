@@ -72,10 +72,10 @@ animations = [{
 [sub_resource type="SpriteFrames" id="SpriteFrames_q5b0p"]
 animations = [{
 "frames": [{
-"duration": 2.0,
+"duration": 1.0,
 "texture": ExtResource("11_bget5")
 }, {
-"duration": 2.0,
+"duration": 1.0,
 "texture": ExtResource("12_b1q4u")
 }],
 "loop": true,
@@ -108,10 +108,7 @@ autoplay = "idle"
 [node name="Nose" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_nosie")
 animation = &"idle"
-autoplay = "idle"
 
 [node name="Shadow" type="AnimatedSprite2D" parent="."]
-modulate = Color(0.366595, 0.366595, 0.366595, 0.262745)
 sprite_frames = SubResource("SpriteFrames_q5b0p")
 animation = &"idle"
-autoplay = "idle"

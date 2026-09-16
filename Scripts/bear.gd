@@ -1,10 +1,10 @@
 extends Node2D
 
-@onready var base: Sprite2D = $Base
-@onready var secondary: Sprite2D = $Secondary
-@onready var eyes: Sprite2D = $Eyes
-@onready var nose: Sprite2D = $Nose
-@onready var shadow: Sprite2D = $Shadow
+@onready var base: AnimatedSprite2D = $Base
+@onready var secondary: AnimatedSprite2D = $Secondary
+@onready var eyes: AnimatedSprite2D = $Eyes
+@onready var nose: AnimatedSprite2D = $Nose
+@onready var shadow: AnimatedSprite2D = $Shadow
 
 
 var RGBvalue : float
