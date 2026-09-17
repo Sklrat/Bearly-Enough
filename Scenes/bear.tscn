@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://dvvswfeytqf4n"]
+[gd_scene load_steps=20 format=3 uid="uid://dvvswfeytqf4n"]
 
 [ext_resource type="Script" path="res://Scripts/bear.gd" id="1_fgheh"]
 [ext_resource type="Texture2D" uid="uid://byr8xuq3bn7mq" path="res://Sprites/Test Sprites/bear.png" id="1_npxhg"]
+[ext_resource type="Shader" path="res://Shaders/shadow.gdshader" id="6_sshah"]
 [ext_resource type="Texture2D" uid="uid://dqnk8delnow2k" path="res://Sprites/idle/eyes-idle0000.png" id="7_8qhhy"]
 [ext_resource type="Texture2D" uid="uid://jty4h4e2qkiv" path="res://Sprites/idle/eyes-idle0002.png" id="8_sv4jl"]
 [ext_resource type="Texture2D" uid="uid://c31t7ifss5v0e" path="res://Sprites/idle/base-idle0000.png" id="9_0yyrg"]
@@ -69,6 +70,10 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7lu83"]
+shader = ExtResource("6_sshah")
+shader_parameter/multiply_color = Color(0.4, 0, 0.6, 0)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_q5b0p"]
 animations = [{
 "frames": [{
@@ -111,7 +116,8 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="Shadow" type="AnimatedSprite2D" parent="."]
-modulate = Color(0.366595, 0.366595, 0.366595, 0.262745)
+modulate = Color(1, 1, 1, 0.478431)
+material = SubResource("ShaderMaterial_7lu83")
 sprite_frames = SubResource("SpriteFrames_q5b0p")
 animation = &"idle"
 autoplay = "idle"

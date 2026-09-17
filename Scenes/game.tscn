@@ -9,19 +9,17 @@ anchor_mode = 0
 zoom = Vector2(4, 4)
 
 [node name="Bear" parent="." instance=ExtResource("1_6bmdv")]
-position = Vector2(123, 81)
+position = Vector2(95, 70)
+scale = Vector2(4, 4)
 
-[node name="Bear2" parent="." instance=ExtResource("1_6bmdv")]
-position = Vector2(222, 135)
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Bear3" parent="." instance=ExtResource("1_6bmdv")]
-position = Vector2(46, 112)
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 728.0
+offset_top = 248.0
+offset_right = 1058.0
+offset_bottom = 393.0
+theme_override_font_sizes/font_size = 50
+text = "Randomize!"
 
-[node name="Bear4" parent="." instance=ExtResource("1_6bmdv")]
-position = Vector2(237, 26)
-
-[node name="Bear5" parent="." instance=ExtResource("1_6bmdv")]
-position = Vector2(63, 41)
-
-[node name="Bear6" parent="." instance=ExtResource("1_6bmdv")]
-position = Vector2(244, 101)
+[connection signal="pressed" from="CanvasLayer/Button" to="Bear" method="_on_button_pressed"]

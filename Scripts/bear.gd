@@ -50,3 +50,7 @@ func _generateBear() -> void:
 	#shadow.modulate = (base.modulate * 1.5) * (eyes.modulate * 0.7)
 	#shadow.material.set("shader_paramater/multiply_color",Vector4(1,1,1,1));
 	
+
+
+func _on_button_pressed() -> void:
+	_generateBear()
